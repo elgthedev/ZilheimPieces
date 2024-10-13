@@ -1,0 +1,9 @@
+{
+  "name": "Zilheim Pieces",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "description": "Mod oficial do servidor Zilheim",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202"
+  ]
+}

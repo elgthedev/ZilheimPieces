@@ -52,12 +52,11 @@ namespace ZilheimPieces
             // Format: new("AssetBundleName", "PrefabName", "FolderName");
             BuildPiece zilHouse1 = new("zilheimpieces", "Zil_House1");
 
-            zilHouse1.Category.Set("Zilheim");
             zilHouse1.Tool.Add("Zil_Hammer");
             zilHouse1.Snapshot(); 
             zilHouse1.SpecialProperties = new SpecialProperties() { AdminOnly = true, NoConfig = true }; // You can declare multiple properties in one line           
+            zilHouse1.RequiredItems.Add("Wood", 100, false); // Add any requirements to build
 
-            //zilHouse1.RequiredItems.Add("Wood", 20, false); // Add any requirements to build
             //zilHouse1.Extension.Set(CraftingTable.Forge, 2); // Makes this piece a station extension, can change the max station distance by changing the second value. Use strings for custom tables.
 
             //// Does your model need to swap materials with a vanilla material? Format: (GameObject, isJotunnMock)
